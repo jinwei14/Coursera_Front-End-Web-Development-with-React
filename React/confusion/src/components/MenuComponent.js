@@ -9,6 +9,11 @@ class Menu extends Component {
         this.state = {
             selectedDish:null
         };
+        console.log("Menu constructure is called")
+    }
+
+    componentDidMount(){
+        console.log("componentDidMount is called")
     }
 
     onDishSelect(dish){
@@ -48,6 +53,8 @@ class Menu extends Component {
             );
         });  //map into a list of items by literaing every dish
 
+
+        console.log("Menu componets render is invoked")
         return (
             <div className="container">
                 <div className="row">
